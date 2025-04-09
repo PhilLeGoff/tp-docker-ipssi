@@ -1,0 +1,45 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: mern-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=development
+
+      - MONGO_URI=mongodb://mongodb:27017/emotweets
+    depends_on:
+      - mongodb
+    volumes:
+      - ./backend:/usr/src/app
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: mern-client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./client:/app
+
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: mydatabase
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+
