@@ -1,9 +1,6 @@
 [submodule "hackaton_back"]
 	path = hackaton_back
 	url = git@github.com:PhilLeGoff/hackaton_back.git
-[submodule "hackaton_front"]
-	path = hackaton_front
-	url = git@github.com:PhilLeGoff/hackaton_front.git
 [submodule "backend"]
 	path = backend
 	url = git@github.com:PhilLeGoff/hackaton_back.git
