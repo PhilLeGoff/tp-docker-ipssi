@@ -4,6 +4,8 @@
 [submodule "backend"]
 	path = backend
 	url = git@github.com:PhilLeGoff/hackaton_back.git
+	branch = main
 [submodule "client"]
 	path = client
 	url = git@github.com:PhilLeGoff/hackaton_front.git
+	branch = main
