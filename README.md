@@ -3,11 +3,12 @@
 This repository is a MERN (MongoDB, Express, React, Node.js) project that uses Git submodules for the backend and client, along with Docker Compose for container orchestration.
 
 ## Project Structure
-
+```bash
   ├── backend/ # Git submodule for the backend API 
   ├── client/ # Git submodule for the frontend 
   ├── docker-compose.yaml # Docker Compose file to run all services 
   └── start-all.sh # Script to start all containers manually
+```
 
 ## Setup
 
