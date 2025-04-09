@@ -6,8 +6,7 @@ This repository is a MERN (MongoDB, Express, React, Node.js) project that uses G
 ```bash
   ├── backend/ # Git submodule for the backend API 
   ├── client/ # Git submodule for the frontend 
-  ├── docker-compose.yaml # Docker Compose file to run all services 
-  └── start-all.sh # Script to start all containers manually
+  └──  docker-compose.yaml # Docker Compose file to run all services 
 ```
 
 ## Setup
@@ -17,8 +16,8 @@ This repository is a MERN (MongoDB, Express, React, Node.js) project that uses G
 Clone the repository and then initialize the submodules:
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-directory>
+git clone <https://github.com/PhilLeGoff/tp-docker-ipssi.git>
+cd <tp-docker-ipssi>
 git submodule update --init --recursive
 ```
 
